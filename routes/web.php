@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::redirect('/', '/import', 301);
+
+Route::get('/users-import', 'ImportUsersController@index')->name('users.import.index');
+
+Route::post('/users-import', 'ImportUsersController@store')->name('users.import.store');
