@@ -14,5 +14,7 @@
 Route::redirect('/', '/import', 301);
 
 Route::get('/users-import', 'ImportUsersController@index')->name('users.import.index');
-
 Route::post('/users-import', 'ImportUsersController@store')->name('users.import.store');
+
+Route::get('/users-search', 'UsersSearchController@index')->name('users.search.index');
+Route::get('/users-find', 'UsersSearchController@find')->name('users.search.find');

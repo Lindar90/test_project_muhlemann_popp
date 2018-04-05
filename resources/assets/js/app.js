@@ -15,7 +15,8 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('users-import', require('./components/UsersImport.vue'));
+Vue.component('users-import', require('./components/Users/Import.vue'));
+Vue.component('users-search', require('./components/Users/Search.vue'));
 
 const app = new Vue({
     el: '#app'

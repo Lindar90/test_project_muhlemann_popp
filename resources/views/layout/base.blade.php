@@ -23,7 +23,7 @@
             <a class="nav-link" href="{{ route('users.import.index') }}">Import</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Search</a>
+            <a class="nav-link" href="{{ route('users.search.index') }}">Search</a>
           </li>
         </ul>
       </div>
